@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  .header-search .input-group {
+    max-width: 100%; /* Adjust width for header */
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+  .custom-select-sm {
+    height: calc(1.5em + .5rem + 2px);
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .5rem;
+    font-size: 0.6rem;
+  }
+  .header-search .input-group .input-group-text {
+    display: flex; /* Removes the flex behavior */
+    background-color: #e0e0e0;
+    /* border-left: 0; */
+    padding: 10px;
+    border-radius: 0 5px 5px 0; /* Adjust border radius as needed */
+  }
+  .logo-image {
+    height: 40px;
+  }
+  
+  .delivery-address select {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .nav-bar a:hover {
+    color: orange;
+  }
+  
+  body{
+    font-family: Inter;
+  }
+  
+  
+  
+  /* General Styles */
+  .header {
+    padding: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust Left Section */
+    .header .col-lg-4.col-md-6 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .logo-image {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .delivery-address {
+        width: 100%;
+    }
+  
+    /* Adjust Center Section */
+    .header .col-lg-4.col-md-12 {
+        margin-top: 10px;
+    }
+  
+    /* Adjust Right Section */
+    .header .col-lg-4.col-md-6 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .col-lg-4.col-md-6 a {
+        margin-bottom: 8px;
+    }
+    .header .icons i {
+        margin-right: 16px;
+    }
+  
+    /* Second Header Row */
+    .header .row.align-items-center.py-2.mt-2.border {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header .col-12.col-md-auto {
+        margin-bottom: 15px;
+    }
+    .header .d-flex.align-items-center.justify-content-end {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+  }
+  
+  /* General styling */
+  .bg-blue {
+    background-color: #19335F;
+  }
+  
+  .icon-large {
+    font-size: 2.2rem;
+    color: #fff;
+  }
+  
+  .menu-text {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  
+  .divider {
+    border-left: 2px solid #fff;
+    height: 2.5rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .logo-image {
+    height: 60px;
+    width: auto;
+  }
+  
+  /* User actions styling */
+  .user-actions .action-item {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+  }
+  
+  .icon-small {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 8px;
+  }
+  
+  .action-text {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .bot-icon {
+    height: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    /* Stack elements vertically */
+    .bg-blue .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bg-blue .menu-text,
+    .bg-blue .action-text {
+        font-size: 1.5rem;
+    }
+    .bg-blue .icon-large {
+        font-size: 2.5rem;
+    }
+    .divider {
+        display: none;
+    }
+    .user-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-actions .action-item {
+        margin-bottom: 10px;
+    }
+  }
+  
+  
+  /*  */
+  
+  .category-bar {
+    background-color: #F8F9FA; /* Light background color */
+    padding: 15px 0;
+    /* border-bottom: 1px solid #E0E0E0; */
+  }
+  
+  .category-item {
+    font-size: 16px;
+    color: #333;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-item i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .category-item.active {
+    color: #ff6600; /* Highlight color for active category */
+    font-weight: bold;
+  }
+  /* 
+  .category-item:hover {
+    color: #ff6600;;
+  } */
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #666;
+    /* padding: 5px 0 0; */
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #fff !important;
+    margin-bottom: 0;
+  }
+  
+  
+  /*  */
+  
+  .items-info-bar {
+    background-color: lightgray; /* Light background */
+    padding: 10px 10px;
+  }
+  
+  .items-info {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .filter-dropdown {
+    max-width: 150px; /* Adjust dropdown width */
+    border: 1px solid #ccc;
+  }
+  
+  /* Responsive Adjustment */
+  @media (max-width: 768px) {
+    .items-info-bar .row {
+        flex-direction: column;
+    }
+    .filter-dropdown {
+        width: 100%; /* Full width for dropdown on mobile */
+        margin-top: 5px;
+    }
+    .items-info {
+        text-align: center;
+        width: 100%;
+    }
+  }
+  .text-right {
+    text-align: right !important;
+    margin-right: 15px;
+  }
+  .items-info {
+    font-size: 16px;
+    color: #333;
+    margin-left: 15px;
+  }
+  
+  /* Overall dropdown styling */
+  .filter-dropdown {
+    appearance: none; /* Removes default styling */
+    -webkit-appearance: none; /* For Safari */
+    background-color: #e0e0e0; /* Gray background */
+    color: #333; /* Text color */
+    border: 1px solid #000; /* Border color */
+    padding: 5px 30px 5px 10px; /* Padding to make space for the custom arrow */
+    font-size: 16px;
+    position: relative;
+  }
+  
+  /* Custom arrow styling */
+  .filter-dropdown::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    right: 10px; /* Position the arrow on the right */
+    color: #888; /* Arrow color */
+    pointer-events: none; /* Makes sure the arrow doesn't interfere with select interaction */
+  }
+  
+  /* Adjust dropdown width */
+  .filter-dropdown {
+    max-width: 150px;
+  }
+  
+  /* Hover effect */
+  .filter-dropdown:hover {
+    background-color: #d3d3d3; /* Slightly darker gray on hover */
+  }
+  
+  /* Responsive adjustment */
+  @media (max-width: 768px) {
+    .filter-dropdown {
+        width: 100%; /* Full width on mobile */
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,98 @@
+/* websitepage.css */
+
+/* Basic Layout */
+.websitepage {
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  
+  .auth-buttons button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .auth-buttons .login {
+    background-color: #07478d;
+  }
+  
+  .auth-buttons .signup {
+    background-color: #28a745;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+  }
+  
+  .text-content {
+    max-width: 800px;
+  }
+  
+  .text-content h1 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800; 
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #262626;
+    margin-top: 10px;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .cta-buttons button {
+    background-color: #19335F;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .cta-buttons .learn-more {
+    background-color: white;
+    color: #18ACDF;
+    border: 2px solid #18ACDF;
+  }
+  .image-content {
+    margin-bottom: 60px; /* Adjust the value as needed */
+  }
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

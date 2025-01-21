@@ -1,0 +1,174 @@
+.shopping-cart {
+  padding: 2px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-header h1 {
+  text-align: left; /* Left align the Shopping Cart title */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20PX;
+}
+
+.cart-items-section {
+  flex: 3;
+  margin-right: 40px;
+  background-color: #ECECEC;
+  padding: 20px;
+  text-align: left;
+}
+.subtotal-section {
+  flex: 1;
+  background-color: #ECECEC; /* Grey background for subtotal section */
+  padding: 20px;
+  text-align: left;
+  max-width: 400px; /* Limit the width */
+  width: fit-content;  /* Shrink the section to fit the content */
+  margin: 0 auto; /* Center the subtotal section horizontally */
+}
+.subtotal-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subtotal-box .subtotal-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #005bb5;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.item-header {
+  display: flex;
+  width: 100%;
+}
+
+.item-checkbox {
+  margin-right: 10px;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-actions {
+  font-size: 3px;
+  color: #0073e6;
+}
+
+.item-actions .item-button {
+  background: none;
+  border: none;
+  color: #0073e6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+.dark-hr {
+  border: 0;
+  border-top: 2px solid #333; /* Darker line */
+  margin: 10px 0;
+}
+/* General style for all buttons */
+.item-button {
+  background-color: transparent;
+  border: none;
+  padding: 4px 8px; /* Smaller padding */
+  font-size: 12px;  /* Smaller font size */
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block; /* Ensure buttons are inline */
+  margin-right: 5px;  /* Space between buttons */
+  line-height: 1.2; /* Adjust line height for compactness */
+}
+
+/* Specific colors for each button */
+.delete-btn {
+  color: red;  /* Red color for Delete button */
+}
+
+.see-more-btn {
+  color: blue;  /* Blue color for See more like this button */
+}
+
+.share-btn {
+  color: green;  /* Green color for Share button */
+}
+
+/* Vertical lines between the buttons */
+.item-actions {
+  display: flex;  /* Align buttons horizontally */
+  align-items: center;
+  margin-left: 10px;  /* Adjust to align with the quantity buttons */
+}
+
+/* Vertical line between buttons, excluding the last one */
+.item-button:not(:last-child) {
+  border-right: 2px solid #ddd;  /* Vertical line between buttons */
+  padding-right: 12px;  /* Space before the vertical line */
+}
+
+/* Optional: Adjust space around the last button if needed */
+.item-button:last-child {
+  margin-right: 0;  /* Remove margin from the last button */
+}
